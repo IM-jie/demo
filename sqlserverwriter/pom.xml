@@ -6,6 +6,7 @@
 		<artifactId>demo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
 	<artifactId>sqlserverwriter</artifactId>
 	<name>sqlserverwriter</name>
 	<packaging>jar</packaging>
@@ -56,24 +57,24 @@
 				</configuration>
 			</plugin>
 			<!-- assembly plugin -->
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<descriptors>
-						<descriptor>src/main/assembly/package.xml</descriptor>
-					</descriptors>
-					<finalName>datax</finalName>
-				</configuration>
-				<executions>
-					<execution>
-						<id>dwzip</id>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+			<!--<plugin>-->
+				<!--<artifactId>maven-assembly-plugin</artifactId>-->
+				<!--<configuration>-->
+					<!--<descriptors>-->
+						<!--<descriptor>src/main/assembly/package.xml</descriptor>-->
+					<!--</descriptors>-->
+					<!--<finalName>datax</finalName>-->
+				<!--</configuration>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<id>dwzip</id>-->
+						<!--<phase>package</phase>-->
+						<!--<goals>-->
+							<!--<goal>single</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
+			<!--</plugin>-->
 		</plugins>
 	</build>
 </project>

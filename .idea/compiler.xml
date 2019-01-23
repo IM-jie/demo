@@ -13,6 +13,7 @@
         <module name="ftpwriter" />
         <module name="hdfsreader" />
         <module name="hdfswriter" />
+        <module name="iservice" />
         <module name="mongodbreader" />
         <module name="mongodbwriter" />
         <module name="mysqlreader" />
@@ -23,8 +24,10 @@
         <module name="plugin-unstructured-storage-util" />
         <module name="postgresqlreader" />
         <module name="postgresqlwriter" />
+        <module name="service" />
         <module name="sqlserverreader" />
         <module name="sqlserverwriter" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
   </component>
