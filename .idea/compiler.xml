@@ -9,6 +9,22 @@
         <module name="datax-common" />
         <module name="datax-core" />
         <module name="datax-transformer" />
+        <module name="ftpreader" />
+        <module name="ftpwriter" />
+        <module name="hdfsreader" />
+        <module name="hdfswriter" />
+        <module name="mongodbreader" />
+        <module name="mongodbwriter" />
+        <module name="mysqlreader" />
+        <module name="mysqlwriter" />
+        <module name="oraclereader" />
+        <module name="oraclewriter" />
+        <module name="plugin-rdbms-util" />
+        <module name="plugin-unstructured-storage-util" />
+        <module name="postgresqlreader" />
+        <module name="postgresqlwriter" />
+        <module name="sqlserverreader" />
+        <module name="sqlserverwriter" />
       </profile>
     </annotationProcessing>
   </component>

@@ -47,7 +47,133 @@
         <module>common</module>
         <module>core</module>
         <module>transformer</module>
+
+        <!-- reader -->
+        <module>mysqlreader</module>
+        <module>oraclereader</module>
+        <module>hdfsreader</module>
+        <module>ftpreader</module>
+        <module>sqlserverreader</module>
+        <module>postgresqlreader</module>
+        <module>mongodbreader</module>
+
+        <!-- writer -->
+        <module>mysqlwriter</module>
+        <module>ftpwriter</module>
+        <module>hdfswriter</module>
+        <module>oraclewriter</module>
+        <module>sqlserverwriter</module>
+        <module>postgresqlwriter</module>
+        <module>mongodbwriter</module>
+
+        <!-- common support module -->
+        <module>plugin-rdbms-util</module>
+        <module>plugin-unstructured-storage-util</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
+            <!--<dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava-version}</version>
+            </dependency>-->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback-classic-version}</version>
+            </dependency>
 
+            <dependency>
+                <groupId>com.taobao.tddl</groupId>
+                <artifactId>tddl-client</artifactId>
+                <version>${tddl.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.guava</groupId>
+                        <artifactId>guava</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.taobao.diamond</groupId>
+                        <artifactId>diamond-client</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taobao.diamond</groupId>
+                <artifactId>diamond-client</artifactId>
+                <version>${diamond.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.search.swift</groupId>
+                <artifactId>swift_client</artifactId>
+                <version>${swift-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>1.9.5</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <finalName>datax</finalName>
+                    <descriptors>
+                        <descriptor>package.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>${project-sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
