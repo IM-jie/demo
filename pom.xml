@@ -79,7 +79,6 @@
 
         <module>service</module>
         <module>web</module>
-        <module>iservice</module>
     </modules>
 
     <dependencyManagement>
