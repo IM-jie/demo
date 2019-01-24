@@ -78,7 +78,6 @@
         <module>plugin-unstructured-storage-util</module>
 
         <module>service</module>
-        <module>web</module>
     </modules>
 
     <dependencyManagement>

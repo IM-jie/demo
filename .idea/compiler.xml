@@ -13,7 +13,6 @@
         <module name="ftpwriter" />
         <module name="hdfsreader" />
         <module name="hdfswriter" />
-        <module name="iservice" />
         <module name="mongodbreader" />
         <module name="mongodbwriter" />
         <module name="mysqlreader" />
@@ -27,12 +26,12 @@
         <module name="service" />
         <module name="sqlserverreader" />
         <module name="sqlserverwriter" />
-        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="iservice" target="1.6" />
+      <module name="iservice" target="1.8" />
       <module name="iservicei" target="1.8" />
+      <module name="web" target="1.6" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
