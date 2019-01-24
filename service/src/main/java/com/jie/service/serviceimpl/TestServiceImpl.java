@@ -9,9 +9,45 @@ public class TestServiceImpl implements ITestService {
     @Override
     public String test() {
         System.setProperty("datax.home", getCurrentClasspath());
-        String[] datxArgs = {"-job", getCurrentClasspath() + "/job/stream2stream.json", "-mode", "standalone", "-jobid", "-1"};
+        String jobContent = "{\n" +
+                "  \"job\": {\n" +
+                "    \"content\": [\n" +
+                "      {\n" +
+                "        \"reader\": {\n" +
+                "          \"name\": \"streamreader\",\n" +
+                "          \"parameter\": {\n" +
+                "            \"sliceRecordCount\": 1,\n" +
+                "            \"column\": [\n" +
+                "              {\n" +
+                "                \"type\": \"long\",\n" +
+                "                \"value\": \"10\"\n" +
+                "              },\n" +
+                "              {\n" +
+                "                \"type\": \"string\",\n" +
+                "                \"value\": \"hello，你好，世界-DataX\"\n" +
+                "              }\n" +
+                "            ]\n" +
+                "          }\n" +
+                "        },\n" +
+                "        \"writer\": {\n" +
+                "          \"name\": \"streamwriter\",\n" +
+                "          \"parameter\": {\n" +
+                "            \"encoding\": \"UTF-8\",\n" +
+                "            \"print\": true\n" +
+                "          }\n" +
+                "        }\n" +
+                "      }\n" +
+                "    ],\n" +
+                "    \"setting\": {\n" +
+                "      \"speed\": {\n" +
+                "        \"channel\": 1\n" +
+                "      }\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
+
         try {
-            Engine.entry(datxArgs);
+            Engine.entry("standalone", jobContent, "-1");
         } catch (Throwable e) {
             e.printStackTrace();
         }

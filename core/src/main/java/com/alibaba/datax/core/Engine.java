@@ -119,35 +119,20 @@ public class Engine {
         return configuration;
     }
 
-    public static void entry(final String[] args) throws Throwable {
-        Options options = new Options();
-        options.addOption("job", true, "Job config.");
-        options.addOption("jobid", true, "Job unique id.");
-        options.addOption("mode", true, "Job runtime mode.");
+    /**
+     * @param mode
+     * @param jobContent
+     * @param job
+     * @throws Throwable
+     */
+    //新增jobId
+    public static void entry(final String mode, final String jobContent, final String job) throws Throwable {
+        RUNTIME_MODE = mode;
 
-        BasicParser parser = new BasicParser();
-        CommandLine cl = parser.parse(options, args);
-
-        String jobPath = cl.getOptionValue("job");
-
-        // 如果用户没有明确指定jobid, 则 datax.py 会指定 jobid 默认值为-1
-        String jobIdString = cl.getOptionValue("jobid");
-        RUNTIME_MODE = cl.getOptionValue("mode");
-
-        Configuration configuration = ConfigParser.parse(jobPath);
+        Configuration configuration = ConfigParser.parse(jobContent);
 
         long jobId;
-        if (!"-1".equalsIgnoreCase(jobIdString)) {
-            jobId = Long.parseLong(jobIdString);
-        } else {
-            // only for dsc & ds & datax 3 update
-            String dscJobUrlPatternString = "/instance/(\\d{1,})/config.xml";
-            String dsJobUrlPatternString = "/inner/job/(\\d{1,})/config";
-            String dsTaskGroupUrlPatternString = "/inner/job/(\\d{1,})/taskGroup/";
-            List<String> patternStringList = Arrays.asList(dscJobUrlPatternString,
-                    dsJobUrlPatternString, dsTaskGroupUrlPatternString);
-            jobId = parseJobIdFromUrl(patternStringList, jobPath);
-        }
+        jobId = Long.parseLong(job);
 
         boolean isStandAloneMode = "standalone".equalsIgnoreCase(RUNTIME_MODE);
         if (!isStandAloneMode && jobId == -1) {
@@ -198,26 +183,26 @@ public class Engine {
         return -1;
     }
 
-    public static void main(String[] args) throws Exception {
-        int exitCode = 0;
-        try {
-            Engine.entry(args);
-        } catch (Throwable e) {
-            exitCode = 1;
-            LOG.error("\n\n经DataX智能分析,该任务最可能的错误原因是:\n" + ExceptionTracker.trace(e));
-
-            if (e instanceof DataXException) {
-                DataXException tempException = (DataXException) e;
-                ErrorCode errorCode = tempException.getErrorCode();
-                if (errorCode instanceof FrameworkErrorCode) {
-                    FrameworkErrorCode tempErrorCode = (FrameworkErrorCode) errorCode;
-                    exitCode = tempErrorCode.toExitValue();
-                }
-            }
-
-            System.exit(exitCode);
-        }
-        System.exit(exitCode);
-    }
+//    public static void main(String[] args) throws Exception {
+//        int exitCode = 0;
+//        try {
+//            Engine.entry(args);
+//        } catch (Throwable e) {
+//            exitCode = 1;
+//            LOG.error("\n\n经DataX智能分析,该任务最可能的错误原因是:\n" + ExceptionTracker.trace(e));
+//
+//            if (e instanceof DataXException) {
+//                DataXException tempException = (DataXException) e;
+//                ErrorCode errorCode = tempException.getErrorCode();
+//                if (errorCode instanceof FrameworkErrorCode) {
+//                    FrameworkErrorCode tempErrorCode = (FrameworkErrorCode) errorCode;
+//                    exitCode = tempErrorCode.toExitValue();
+//                }
+//            }
+//
+//            System.exit(exitCode);
+//        }
+//        System.exit(exitCode);
+//    }
 
 }
