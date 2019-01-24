@@ -14,9 +14,15 @@
     <dependencies>
         <dependency>
             <groupId>com.jie</groupId>
+            <artifactId>datax-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jie</groupId>
             <artifactId>datax-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 
 </project>
