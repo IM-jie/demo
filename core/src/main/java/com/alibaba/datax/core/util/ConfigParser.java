@@ -22,8 +22,8 @@ public final class ConfigParser {
     /**
      * 指定Job配置路径，ConfigParser会解析Job、Plugin、Core全部信息，并以Configuration返回
      */
-    public static Configuration parse(final String jobPath) {
-        Configuration configuration = ConfigParser.parseJobConfig(jobPath);
+    public static Configuration parse(final String jobContent) {
+        Configuration configuration = ConfigParser.parseJobConfig(jobContent);
 
         configuration.merge(
                 ConfigParser.parseCoreConfig(CoreConstant.DATAX_CONF_PATH),
@@ -70,50 +70,51 @@ public final class ConfigParser {
         return Configuration.from(new File(path));
     }
 
-    public static Configuration parseJobConfig(final String path) {
-        String jobContent = getJobContent(path);
+    public static Configuration parseJobConfig(final String jobContent) {
+        //移除jobPath
+        //String jobContent = getJobContent(path);
         Configuration config = Configuration.from(jobContent);
 
         return SecretUtil.decryptSecretKey(config);
     }
 
-    private static String getJobContent(String jobResource) {
-        String jobContent;
-
-        boolean isJobResourceFromHttp = jobResource.trim().toLowerCase().startsWith("http");
-
-
-        if (isJobResourceFromHttp) {
-            //设置httpclient的 HTTP_TIMEOUT_INMILLIONSECONDS
-            Configuration coreConfig = ConfigParser.parseCoreConfig(CoreConstant.DATAX_CONF_PATH);
-            int httpTimeOutInMillionSeconds = coreConfig.getInt(
-                    CoreConstant.DATAX_CORE_DATAXSERVER_TIMEOUT, 5000);
-            HttpClientUtil.setHttpTimeoutInMillionSeconds(httpTimeOutInMillionSeconds);
-
-            HttpClientUtil httpClientUtil = new HttpClientUtil();
-            try {
-                URL url = new URL(jobResource);
-                HttpGet httpGet = HttpClientUtil.getGetRequest();
-                httpGet.setURI(url.toURI());
-
-                jobContent = httpClientUtil.executeAndGetWithFailedRetry(httpGet, 1, 1000l);
-            } catch (Exception e) {
-                throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource, e);
-            }
-        } else {
-            // jobResource 是本地文件绝对路径
-            try {
-                jobContent = FileUtils.readFileToString(new File(jobResource));
-            } catch (IOException e) {
-                throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource, e);
-            }
-        }
-
-        if (jobContent == null) {
-            throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource);
-        }
-        return jobContent;
-    }
+//    private static String getJobContent(String jobResource) {
+//        String jobContent;
+//
+//        boolean isJobResourceFromHttp = jobResource.trim().toLowerCase().startsWith("http");
+//
+//
+//        if (isJobResourceFromHttp) {
+//            //设置httpclient的 HTTP_TIMEOUT_INMILLIONSECONDS
+//            Configuration coreConfig = ConfigParser.parseCoreConfig(CoreConstant.DATAX_CONF_PATH);
+//            int httpTimeOutInMillionSeconds = coreConfig.getInt(
+//                    CoreConstant.DATAX_CORE_DATAXSERVER_TIMEOUT, 5000);
+//            HttpClientUtil.setHttpTimeoutInMillionSeconds(httpTimeOutInMillionSeconds);
+//
+//            HttpClientUtil httpClientUtil = new HttpClientUtil();
+//            try {
+//                URL url = new URL(jobResource);
+//                HttpGet httpGet = HttpClientUtil.getGetRequest();
+//                httpGet.setURI(url.toURI());
+//
+//                jobContent = httpClientUtil.executeAndGetWithFailedRetry(httpGet, 1, 1000l);
+//            } catch (Exception e) {
+//                throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource, e);
+//            }
+//        } else {
+//            // jobResource 是本地文件绝对路径
+//            try {
+//                jobContent = FileUtils.readFileToString(new File(jobResource));
+//            } catch (IOException e) {
+//                throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource, e);
+//            }
+//        }
+//
+//        if (jobContent == null) {
+//            throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource);
+//        }
+//        return jobContent;
+//    }
 
     public static Configuration parsePluginConfig(List<String> wantPluginNames) {
         Configuration configuration = Configuration.newDefault();
