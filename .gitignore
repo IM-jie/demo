@@ -36,7 +36,7 @@ local.properties
 .buildpath
 
 # sbteclipse plugin
-.target
+
 
 # Tern plugin
 .tern-project
@@ -55,7 +55,6 @@ local.properties
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 .idea
 .idea/*
-*/target/
 
 ## File-based project format:
 *.iws
