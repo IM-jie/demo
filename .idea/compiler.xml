@@ -26,6 +26,8 @@
         <module name="service" />
         <module name="sqlserverreader" />
         <module name="sqlserverwriter" />
+        <module name="streamreader" />
+        <module name="streamwriter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -57,6 +59,8 @@
       <module name="service" options="-parameters" />
       <module name="sqlserverreader" options="-parameters" />
       <module name="sqlserverwriter" options="-parameters" />
+      <module name="streamreader" options="-parameters" />
+      <module name="streamwriter" options="-parameters" />
       <module name="web" options="-parameters" />
     </option>
   </component>

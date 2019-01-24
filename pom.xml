@@ -63,6 +63,7 @@
         <module>sqlserverreader</module>
         <module>postgresqlreader</module>
         <module>mongodbreader</module>
+        <module>streamreader</module>
 
         <!-- writer -->
         <module>mysqlwriter</module>
@@ -72,6 +73,7 @@
         <module>sqlserverwriter</module>
         <module>postgresqlwriter</module>
         <module>mongodbwriter</module>
+        <module>streamwriter</module>
 
         <!-- common support module -->
         <module>plugin-rdbms-util</module>
