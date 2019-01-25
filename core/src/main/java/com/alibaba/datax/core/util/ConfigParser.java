@@ -12,10 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public final class ConfigParser {
     private static final Logger LOG = LoggerFactory.getLogger(ConfigParser.class);
@@ -50,6 +47,24 @@ public final class ConfigParser {
         if(StringUtils.isNotEmpty(postHandlerName)) {
             pluginList.add(postHandlerName);
         }
+        List<String> readerPlugins = new ArrayList<String>();
+        List<String> writerplugins = new ArrayList<String>();
+        Map<String, List<String>> pluginMap = new HashMap<String, List<String>>(2);
+
+        readerPlugins.add("{\n" +
+                "                \"class\":\"com.alibaba.datax.plugin.reader.mysqlreader.MysqlReader\",\n" +
+                "                \"name\":\"mysqlreader\",\n" +
+                "                \"path\":\"/Users/jie/IdeaProjects/demo/service/target/classes//plugin/reader/mysqlreader\"\n" +
+                "            }");
+        writerplugins.add("{\n" +
+                "                \"class\":\"com.alibaba.datax.plugin.writer.mysqlwriter.MysqlWriter\",\n" +
+                "                \"name\":\"mysqlwriter\",\n" +
+                "                \"path\":\"/Users/jie/IdeaProjects/demo/service/target/classes//plugin/writer/mysqlwriter\"\n" +
+                "            }");
+        pluginMap.put("reader", readerPlugins);
+        pluginMap.put("writer", writerplugins);
+        LOG.info("parsePlugin--------->" + parsePluginConfigByJson(pluginMap));
+
         try {
             configuration.merge(parsePluginConfig(new ArrayList<String>(pluginList)), false);
         }catch (Exception e){
@@ -66,6 +81,19 @@ public final class ConfigParser {
         return configuration;
     }
 
+    private static Configuration parsePluginConfigByJson(Map<String, List<String>> pluginMap){
+        Configuration configuration = Configuration.newDefault();
+        for (Map.Entry<String, List<String>> plugins : pluginMap.entrySet()){
+            for (String pluginJson : plugins.getValue()){
+                configuration.set(
+                        String.format("plugin.%s.%s", plugins.getKey(), "test"),
+                        pluginJson);
+            }
+
+        }
+        return configuration;
+    }
+
     private static Configuration parseCoreConfig(final String path) {
         return Configuration.from(new File(path));
     }
@@ -78,43 +106,6 @@ public final class ConfigParser {
         return SecretUtil.decryptSecretKey(config);
     }
 
-//    private static String getJobContent(String jobResource) {
-//        String jobContent;
-//
-//        boolean isJobResourceFromHttp = jobResource.trim().toLowerCase().startsWith("http");
-//
-//
-//        if (isJobResourceFromHttp) {
-//            //设置httpclient的 HTTP_TIMEOUT_INMILLIONSECONDS
-//            Configuration coreConfig = ConfigParser.parseCoreConfig(CoreConstant.DATAX_CONF_PATH);
-//            int httpTimeOutInMillionSeconds = coreConfig.getInt(
-//                    CoreConstant.DATAX_CORE_DATAXSERVER_TIMEOUT, 5000);
-//            HttpClientUtil.setHttpTimeoutInMillionSeconds(httpTimeOutInMillionSeconds);
-//
-//            HttpClientUtil httpClientUtil = new HttpClientUtil();
-//            try {
-//                URL url = new URL(jobResource);
-//                HttpGet httpGet = HttpClientUtil.getGetRequest();
-//                httpGet.setURI(url.toURI());
-//
-//                jobContent = httpClientUtil.executeAndGetWithFailedRetry(httpGet, 1, 1000l);
-//            } catch (Exception e) {
-//                throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource, e);
-//            }
-//        } else {
-//            // jobResource 是本地文件绝对路径
-//            try {
-//                jobContent = FileUtils.readFileToString(new File(jobResource));
-//            } catch (IOException e) {
-//                throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource, e);
-//            }
-//        }
-//
-//        if (jobContent == null) {
-//            throw DataXException.asDataXException(FrameworkErrorCode.CONFIG_ERROR, "获取作业配置信息失败:" + jobResource);
-//        }
-//        return jobContent;
-//    }
 
     public static Configuration parsePluginConfig(List<String> wantPluginNames) {
         Configuration configuration = Configuration.newDefault();
@@ -123,8 +114,10 @@ public final class ConfigParser {
         int complete = 0;
         for (final String each : ConfigParser
                 .getDirAsList(CoreConstant.DATAX_PLUGIN_READER_HOME)) {
+            LOG.info("plugin dir-->" + each);
             Configuration eachReaderConfig = ConfigParser.parseOnePluginConfig(each, "reader", replicaCheckPluginSet, wantPluginNames);
             if(eachReaderConfig!=null) {
+                LOG.info("eachReadconfig-->" + eachReaderConfig.toJSON());
                 configuration.merge(eachReaderConfig, true);
                 complete += 1;
             }

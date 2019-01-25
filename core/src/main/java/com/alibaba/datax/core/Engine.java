@@ -130,7 +130,7 @@ public class Engine {
         RUNTIME_MODE = mode;
 
         Configuration configuration = ConfigParser.parse(jobContent);
-
+        LOG.info("configparser-->" + configuration.toJSON());
         long jobId;
         jobId = Long.parseLong(job);
 
