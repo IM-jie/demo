@@ -10,40 +10,63 @@ public class TestServiceImpl implements ITestService {
     public String test() {
         System.setProperty("datax.home", getCurrentClasspath());
         String jobContent = "{\n" +
-                "  \"job\": {\n" +
-                "    \"content\": [\n" +
-                "      {\n" +
-                "        \"reader\": {\n" +
-                "          \"name\": \"streamreader\",\n" +
-                "          \"parameter\": {\n" +
-                "            \"sliceRecordCount\": 1,\n" +
-                "            \"column\": [\n" +
-                "              {\n" +
-                "                \"type\": \"long\",\n" +
-                "                \"value\": \"10\"\n" +
-                "              },\n" +
-                "              {\n" +
-                "                \"type\": \"string\",\n" +
-                "                \"value\": \"hello，你好，世界-DataX\"\n" +
-                "              }\n" +
-                "            ]\n" +
-                "          }\n" +
-                "        },\n" +
-                "        \"writer\": {\n" +
-                "          \"name\": \"streamwriter\",\n" +
-                "          \"parameter\": {\n" +
-                "            \"encoding\": \"UTF-8\",\n" +
-                "            \"print\": true\n" +
-                "          }\n" +
+                "    \"job\": {\n" +
+                "        \"content\": [\n" +
+                "            {\n" +
+                "\n" +
+                "            \"reader\": {\n" +
+                "                    \"name\": \"mysqlreader\",\n" +
+                "                    \"parameter\": {\n" +
+                "                        \"username\": \"root\",\n" +
+                "                        \"password\": \"123456\",\n" +
+                "                        \"column\": [\"*\"],\n" +
+                "                        \"splitPk\": \"id\",\n" +
+                "                        \"connection\": [\n" +
+                "                            {\n" +
+                "                                \"table\": [\n" +
+                "                                    \"t_test\"\n" +
+                "                                ],\n" +
+                "                                \"jdbcUrl\": [\n" +
+                "                                    \"jdbc:mysql://134.175.21.91:3306/datasource?useUnicode=true&characterEncoding=utf8\"\n" +
+                "                                ]\n" +
+                "                            }\n" +
+                "                        ]\n" +
+                "                    }\n" +
+                "                },\n" +
+                "                \"writer\": {\n" +
+                "                    \"name\": \"mysqlwriter\",\n" +
+                "                    \"parameter\": {\n" +
+                "                        \"writeMode\": \"insert\",\n" +
+                "                        \"username\": \"root\",\n" +
+                "                        \"password\": \"123456\",\n" +
+                "                        \"column\": [\n" +
+                "                           \"*\"\n" +
+                "                        ],\n" +
+                "                        \"session\": [\n" +
+                "                            \"set session sql_mode='ANSI'\"\n" +
+                "                        ],\n" +
+                "                        \"preSql\": [\n" +
+                "                            \"truncate test\"\n" +
+                "                        ],\n" +
+                "                        \"connection\": [\n" +
+                "                            {\n" +
+                "                                \"jdbcUrl\": \"jdbc:mysql://134.175.21.91:3306/datatarget?useUnicode=true&characterEncoding=utf8\",\n" +
+                "                                \"table\": [\n" +
+                "                                    \"test\"\n" +
+                "                                ]\n" +
+                "                            }\n" +
+                "                        ]\n" +
+                "                    }\n" +
+                "                    \n" +
+                "                }\n" +
+                "            }\n" +
+                "        ],\n" +
+                "        \"setting\": {\n" +
+                "            \"speed\": {\n" +
+                "                \"channel\": 5\n" +
+                "            }\n" +
                 "        }\n" +
-                "      }\n" +
-                "    ],\n" +
-                "    \"setting\": {\n" +
-                "      \"speed\": {\n" +
-                "        \"channel\": 1\n" +
-                "      }\n" +
                 "    }\n" +
-                "  }\n" +
                 "}";
 
         try {
