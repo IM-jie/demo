@@ -51,22 +51,21 @@ public final class ConfigParser {
         List<String> writerplugins = new ArrayList<String>();
         Map<String, List<String>> pluginMap = new HashMap<String, List<String>>(2);
 
-        readerPlugins.add("{\n" +
-                "                \"class\":\"com.alibaba.datax.plugin.reader.mysqlreader.MysqlReader\",\n" +
-                "                \"name\":\"mysqlreader\",\n" +
-                "                \"path\":\"/Users/jie/IdeaProjects/demo/service/target/classes//plugin/reader/mysqlreader\"\n" +
-                "            }");
-        writerplugins.add("{\n" +
-                "                \"class\":\"com.alibaba.datax.plugin.writer.mysqlwriter.MysqlWriter\",\n" +
-                "                \"name\":\"mysqlwriter\",\n" +
-                "                \"path\":\"/Users/jie/IdeaProjects/demo/service/target/classes//plugin/writer/mysqlwriter\"\n" +
-                "            }");
+        readerPlugins.add("{" +
+                "    \"name\": \"mysqlreader\"," +
+                "    \"class\": \"com.alibaba.datax.plugin.reader.mysqlreader.MysqlReader\"" +
+                "}");
+        writerplugins.add("{" +
+                "    \"name\": \"mysqlwriter\"," +
+                "    \"class\": \"com.alibaba.datax.plugin.writer.mysqlwriter.MysqlWriter\"" +
+                "}");
         pluginMap.put("reader", readerPlugins);
         pluginMap.put("writer", writerplugins);
         LOG.info("parsePlugin--------->" + parsePluginConfigByJson(pluginMap));
 
         try {
-            configuration.merge(parsePluginConfig(new ArrayList<String>(pluginList)), false);
+//            configuration.merge(parsePluginConfig(new ArrayList<String>(pluginList)), false);
+            configuration.merge(parsePluginConfigByJson(pluginMap), false);
         }catch (Exception e){
             //吞掉异常，保持log干净。这里message足够。
             LOG.warn(String.format("插件[%s,%s]加载失败，1s后重试... Exception:%s ", readerPluginName, writerPluginName, e.getMessage()));
@@ -85,9 +84,10 @@ public final class ConfigParser {
         Configuration configuration = Configuration.newDefault();
         for (Map.Entry<String, List<String>> plugins : pluginMap.entrySet()){
             for (String pluginJson : plugins.getValue()){
+                String pluginName = Configuration.from(pluginJson).getString("name");
                 configuration.set(
-                        String.format("plugin.%s.%s", plugins.getKey(), "test"),
-                        pluginJson);
+                        String.format("plugin.%s.%s", plugins.getKey(), pluginName),
+                        Configuration.from(pluginJson).getInternal());
             }
 
         }
@@ -136,6 +136,7 @@ public final class ConfigParser {
             throw DataXException.asDataXException(FrameworkErrorCode.PLUGIN_INIT_ERROR, "插件加载失败，未完成指定插件加载:" + wantPluginNames);
         }
 
+        LOG.info("configuration--->" + configuration.toJSON());
         return configuration;
     }
 
@@ -165,7 +166,10 @@ public final class ConfigParser {
         }
 
         Configuration result = Configuration.newDefault();
-
+        LOG.info("pluginName-->" + pluginName);
+        LOG.info("configuration getInternal--->" + configuration.toJSON());
+        LOG.info("configuration getInternal--->" + configuration.getInternal());
+        LOG.info("String format--->" + String.format("plugin.%s.%s", type, pluginName));
         result.set(
                 String.format("plugin.%s.%s", type, pluginName),
                 configuration.getInternal());

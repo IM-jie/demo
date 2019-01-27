@@ -38,29 +38,29 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="datax-common" options="-parameters" />
-      <module name="datax-core" options="-parameters" />
-      <module name="datax-transformer" options="-parameters" />
-      <module name="ftpreader" options="-parameters" />
-      <module name="ftpwriter" options="-parameters" />
-      <module name="hdfsreader" options="-parameters" />
-      <module name="hdfswriter" options="-parameters" />
+      <module name="datax-common" options="" />
+      <module name="datax-core" options="" />
+      <module name="datax-transformer" options="" />
+      <module name="ftpreader" options="" />
+      <module name="ftpwriter" options="" />
+      <module name="hdfsreader" options="" />
+      <module name="hdfswriter" options="" />
       <module name="iservice" options="-parameters" />
-      <module name="mongodbreader" options="-parameters" />
-      <module name="mongodbwriter" options="-parameters" />
-      <module name="mysqlreader" options="-parameters" />
-      <module name="mysqlwriter" options="-parameters" />
-      <module name="oraclereader" options="-parameters" />
-      <module name="oraclewriter" options="-parameters" />
-      <module name="plugin-rdbms-util" options="-parameters" />
-      <module name="plugin-unstructured-storage-util" options="-parameters" />
-      <module name="postgresqlreader" options="-parameters" />
-      <module name="postgresqlwriter" options="-parameters" />
-      <module name="service" options="-parameters" />
-      <module name="sqlserverreader" options="-parameters" />
-      <module name="sqlserverwriter" options="-parameters" />
-      <module name="streamreader" options="-parameters" />
-      <module name="streamwriter" options="-parameters" />
+      <module name="mongodbreader" options="" />
+      <module name="mongodbwriter" options="" />
+      <module name="mysqlreader" options="" />
+      <module name="mysqlwriter" options="" />
+      <module name="oraclereader" options="" />
+      <module name="oraclewriter" options="" />
+      <module name="plugin-rdbms-util" options="" />
+      <module name="plugin-unstructured-storage-util" options="" />
+      <module name="postgresqlreader" options="" />
+      <module name="postgresqlwriter" options="" />
+      <module name="service" options="" />
+      <module name="sqlserverreader" options="" />
+      <module name="sqlserverwriter" options="" />
+      <module name="streamreader" options="" />
+      <module name="streamwriter" options="" />
       <module name="web" options="-parameters" />
     </option>
   </component>
