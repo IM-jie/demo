@@ -28,479 +28,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eecba789-9673-427b-a422-cfa82f217213" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/base/BaseObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/constant/CommonConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/constant/PluginType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/BoolColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/BytesCast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/BytesColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/Column$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/Column.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/ColumnCast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/DateCast$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/DateCast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/DateColumn$DateType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/DateColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/DoubleColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/LongColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/OverFlowUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/Record.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/StringCast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/element/StringColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/exception/CommonErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/exception/DataXException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/exception/ExceptionTracker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/AbstractJobPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/AbstractPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/AbstractTaskPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/JobPluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/PluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/Pluginable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/RecordReceiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/RecordSender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/plugin/TaskPluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Hook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Reader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Reader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Writer$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Writer$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/spi/Writer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfRecord$ACTION.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfRecord$PHASE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfTrace$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfTrace$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfTrace$JobStatisticsDto2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfTrace$SumPerf4Report.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfTrace$SumPerfRecord4Print.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/PerfTrace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$GCStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$MemoryStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$PhyOSStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$ProcessCpuStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$ProcessGCStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo$ProcessMemoryStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/statistics/VMInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/FilterUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/HostUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/ListUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/RangeSplitUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/RetryUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/RetryUtil$AsyncRetry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/RetryUtil$Retry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/RetryUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/alibaba/datax/common/util/StrUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/datax-common-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/alibaba/datax/core/util/ConfigParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/alibaba/datax/core/util/ConfigParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/AbstractContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/Engine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/container/util/HookInvoker$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/container/util/HookInvoker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/container/util/JobAssignUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/JobContainer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/JobContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/meta/ExecuteMode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/meta/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/scheduler/AbstractScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/scheduler/processinner/ProcessInnerScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/job/scheduler/processinner/StandAloneScheduler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/Communication$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/Communication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/CommunicationTool$Jsonify$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/CommunicationTool$Jsonify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/CommunicationTool$Stringify.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/CommunicationTool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/communication/LocalTGCommunicationManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/collector/AbstractCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/collector/ProcessInnerCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/communicator/AbstractContainerCommunicator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/communicator/job/StandAloneJobContainerCommunicator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/communicator/taskgroup/AbstractTGContainerCommunicator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/communicator/taskgroup/StandaloneTGContainerCommunicator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/report/AbstractReporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/container/report/ProcessInnerReporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/plugin/DefaultJobPluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/plugin/task/AbstractTaskPluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/plugin/task/HttpPluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/plugin/task/StdoutPluginCollector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/plugin/task/util/DirtyColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/statistics/plugin/task/util/DirtyRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/TaskGroupContainer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/TaskGroupContainer$TaskExecutor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/TaskGroupContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/TaskMonitor$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/TaskMonitor$TaskCommunication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/TaskMonitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/runner/AbstractRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/runner/ReaderRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/runner/TaskGroupContainerRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/taskgroup/runner/WriterRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/channel/Channel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/channel/memory/MemoryChannel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/exchanger/BufferedRecordExchanger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/exchanger/BufferedRecordTransformerExchanger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/exchanger/RecordExchanger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/exchanger/TransformerExchanger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/record/DefaultRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/record/TerminateRecord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/ComplexTransformerProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/FilterTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/GroovyTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/GroovyTransformerStaticUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/PadTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/ReplaceTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/SubstrTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/TransformerErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/TransformerExecution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/TransformerExecutionParas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/TransformerInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/transport/transformer/TransformerRegistry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/ClassSize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/ClassUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/ConfigParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/ConfigurationValidate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/ErrorRecordChecker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/ExceptionTracker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/FrameworkErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/HttpClientUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/HttpClientUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/HttpClientUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/SecretUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/TransformerUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/ClassLoaderSwapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/CoreConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/JarLoader$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/JarLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/LoadUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/LoadUtil$ContainerType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/core/util/container/LoadUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/dataxservice/face/domain/enums/EnumStrVal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/dataxservice/face/domain/enums/EnumVal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/dataxservice/face/domain/enums/ExecuteMode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/alibaba/datax/dataxservice/face/domain/enums/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/datax-core-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ftpreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ftpreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/FtpHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/FtpReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/FtpReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/FtpReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/FtpReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/SftpHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/com/alibaba/datax/plugin/reader/ftpreader/StandardFtpHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/plugin-template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/ftpreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ftpwriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ftpwriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/FtpWriter$Job$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/FtpWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/FtpWriter$Task$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/FtpWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/FtpWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/FtpWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/util/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/util/IFtpHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/util/SftpHelperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/com/alibaba/datax/plugin/writer/ftpwriter/util/StandardFtpHelperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/ftpwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftpwriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hdfsreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hdfsreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/DFSUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/DFSUtil$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/DFSUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/HdfsFileType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/HdfsReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/HdfsReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/HdfsReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/HdfsReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/com/alibaba/datax/plugin/reader/hdfsreader/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/hdfsreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfsreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hdfswriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hdfswriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/HdfsHelper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/HdfsHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/HdfsWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/HdfsWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/HdfsWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/HdfsWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/com/alibaba/datax/plugin/writer/hdfswriter/SupportHiveDataType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/hdfswriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hdfswriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iservice/target/iservice-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iservice/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mongodbreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mongodbreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/KeyConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/MongoDBReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/MongoDBReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/MongoDBReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/MongoDBReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/util/CollectionSplitUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/util/MongoUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/com/alibaba/datax/plugin/reader/mongodbreader/util/Range.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbreader/target/mongodbreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mongodbwriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mongodbwriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/com/alibaba/datax/plugin/writer/mongodbwriter/KeyConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/com/alibaba/datax/plugin/writer/mongodbwriter/MongoDBWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/com/alibaba/datax/plugin/writer/mongodbwriter/MongoDBWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/com/alibaba/datax/plugin/writer/mongodbwriter/MongoDBWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/com/alibaba/datax/plugin/writer/mongodbwriter/MongoDBWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/com/alibaba/datax/plugin/writer/mongodbwriter/util/MongoUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodbwriter/target/mongodbwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysqlreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysqlreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/classes/com/alibaba/datax/plugin/reader/mysqlreader/MysqlReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/classes/com/alibaba/datax/plugin/reader/mysqlreader/MysqlReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/classes/com/alibaba/datax/plugin/reader/mysqlreader/MysqlReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/classes/com/alibaba/datax/plugin/reader/mysqlreader/MysqlReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlreader/target/mysqlreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysqlwriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysqlwriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/classes/com/alibaba/datax/plugin/writer/mysqlwriter/MysqlWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/classes/com/alibaba/datax/plugin/writer/mysqlwriter/MysqlWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/classes/com/alibaba/datax/plugin/writer/mysqlwriter/MysqlWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysqlwriter/target/mysqlwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oraclereader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oraclereader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/com/alibaba/datax/plugin/reader/oraclereader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/com/alibaba/datax/plugin/reader/oraclereader/OracleReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/com/alibaba/datax/plugin/reader/oraclereader/OracleReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/com/alibaba/datax/plugin/reader/oraclereader/OracleReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/com/alibaba/datax/plugin/reader/oraclereader/OracleReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclereader/target/oraclereader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oraclewriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oraclewriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/classes/com/alibaba/datax/plugin/writer/oraclewriter/OracleWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/classes/com/alibaba/datax/plugin/writer/oraclewriter/OracleWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/classes/com/alibaba/datax/plugin/writer/oraclewriter/OracleWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/classes/com/alibaba/datax/plugin/writer/oraclewriter/OracleWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oraclewriter/target/oraclewriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/CommonRdbmsReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/CommonRdbmsReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/CommonRdbmsReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/ResultSetReadProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/util/HintUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/util/OriginalConfPretreatmentUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/util/PreCheckTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/util/ReaderSplitUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/util/SingleTableSplitUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/reader/util/SingleTableSplitUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/ConnectionFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DBUtilErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DataBaseType$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/DataBaseType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/JdbcConnectionFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/RdbmsException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/RdbmsRangeSplitWrap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/SqlFormatUtil$FormatProcess.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/SqlFormatUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/util/TableExpandUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/CommonRdbmsWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/CommonRdbmsWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/CommonRdbmsWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/MysqlWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/util/OriginalConfPretreatmentUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/classes/com/alibaba/datax/plugin/rdbms/writer/util/WriterUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-rdbms-util/target/plugin-rdbms-util-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/ColumnEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/ExpandLzopInputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/UnstructuredStorageReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/UnstructuredStorageReaderUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/UnstructuredStorageReaderUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/UnstructuredStorageReaderUtil$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/UnstructuredStorageReaderUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/reader/ZipCycleInputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/CsvWriterImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/TextCsvWriterManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/TextWriterImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/UnstructuredStorageWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/UnstructuredStorageWriterUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/classes/com/alibaba/datax/plugin/unstructuredstorage/writer/UnstructuredWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin-unstructured-storage-util/target/plugin-unstructured-storage-util-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/postgresqlreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/postgresqlreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/classes/com/alibaba/datax/plugin/reader/postgresqlreader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/classes/com/alibaba/datax/plugin/reader/postgresqlreader/PostgresqlReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/classes/com/alibaba/datax/plugin/reader/postgresqlreader/PostgresqlReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/classes/com/alibaba/datax/plugin/reader/postgresqlreader/PostgresqlReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlreader/target/postgresqlreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/postgresqlwriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/postgresqlwriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/classes/com/alibaba/datax/plugin/writer/postgresqlwriter/PostgresqlWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/classes/com/alibaba/datax/plugin/writer/postgresqlwriter/PostgresqlWriter$Task$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/classes/com/alibaba/datax/plugin/writer/postgresqlwriter/PostgresqlWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/classes/com/alibaba/datax/plugin/writer/postgresqlwriter/PostgresqlWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postgresqlwriter/target/postgresqlwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jie/service/ServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jie/service/controller/TestControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jie/service/iservice/ITestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/jie/service/serviceimpl/TestServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/conf/.secret.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/conf/core.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/conf/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/job/job.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/job/stream2stream.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-beanutils-1.9.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-cli-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-codec-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-collections-3.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-configuration-1.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-io-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-lang3-3.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/commons-math3-3.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/datax-common-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/datax-core-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/datax-transformer-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/fastjson-1.1.46.sec01.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/fluent-hc-4.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/groovy-all-2.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/httpclient-4.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/httpcore-4.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/janino-2.5.16.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/logback-classic-1.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/logback-core-1.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/lib/slf4j-api-1.7.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/plugin/reader/streamreader/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/plugin/reader/streamreader/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/plugin/reader/streamreader/streamreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/plugin/writer/streamwriter/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/plugin/writer/streamwriter/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/plugin/writer/streamwriter/streamwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/script/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sqlserverreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sqlserverreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/com/alibaba/datax/plugin/reader/sqlserverreader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/com/alibaba/datax/plugin/reader/sqlserverreader/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/com/alibaba/datax/plugin/reader/sqlserverreader/SqlServerReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/com/alibaba/datax/plugin/reader/sqlserverreader/SqlServerReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/com/alibaba/datax/plugin/reader/sqlserverreader/SqlServerReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/com/alibaba/datax/plugin/reader/sqlserverreader/SqlServerReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverreader/target/sqlserverreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sqlserverwriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sqlserverwriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/classes/com/alibaba/datax/plugin/writer/sqlserverwriter/SqlServerWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/classes/com/alibaba/datax/plugin/writer/sqlserverwriter/SqlServerWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/classes/com/alibaba/datax/plugin/writer/sqlserverwriter/SqlServerWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/classes/com/alibaba/datax/plugin/writer/sqlserverwriter/SqlServerWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlserverwriter/target/sqlserverwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/streamreader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/streamreader/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/Constant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/StreamReader$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/StreamReader$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/StreamReader$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/StreamReader$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/StreamReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/com/alibaba/datax/plugin/reader/streamreader/StreamReaderErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamreader/target/streamreader-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/streamwriter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/streamwriter/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/com/alibaba/datax/plugin/writer/streamwriter/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/com/alibaba/datax/plugin/writer/streamwriter/StreamWriter$Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/com/alibaba/datax/plugin/writer/streamwriter/StreamWriter$Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/com/alibaba/datax/plugin/writer/streamwriter/StreamWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/com/alibaba/datax/plugin/writer/streamwriter/StreamWriterErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/plugin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/classes/plugin_job_template.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/streamwriter/target/streamwriter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transformer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transformer/src/main/assembly/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/target/classes/com/alibaba/datax/transformer/ComplexTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/target/classes/com/alibaba/datax/transformer/Transformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/target/datax-transformer-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/jie/web/WebApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/assembly/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/assembly/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -553,40 +85,41 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="5" />
+          <entry key="gitignore" value="1" />
           <entry key="java" value="1281" />
           <entry key="json" value="7" />
-          <entry key="xml" value="234" />
+          <entry key="xml" value="342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1281" />
           <entry key="JSON" value="7" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="XML" value="234" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="XML" value="342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="class" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="java" value="13" />
-          <entry key="json" value="13" />
+          <entry key="json" value="14" />
           <entry key="md" value="1" />
           <entry key="py" value="1" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="47" />
+          <entry key="xml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="13" />
-          <entry key="JSON" value="13" />
+          <entry key="JSON" value="14" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="47" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="XML" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -603,19 +136,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/core/src/main/assembly/package.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1779">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="19">
+              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -641,12 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/java/com/jie/web/controller/TestControl.java" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/service/target/classes/job/stream2stream.json" />
-        <option value="$PROJECT_DIR$/service/target/classes/conf/core.json" />
-        <option value="$PROJECT_DIR$/service/target/classes/job/job.json" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/service/target/classes/plugin/reader/streamreader/plugin_job_template.json" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/jie/service/serviceimpl/TestServiceImpl.java" />
@@ -690,8 +208,14 @@
         <option value="$PROJECT_DIR$/ftpwriter/src/main/assembly/package.xml" />
         <option value="$PROJECT_DIR$/mongodbreader/src/main/assembly/package.xml" />
         <option value="$PROJECT_DIR$/mongodbwriter/src/main/assembly/package.xml" />
-        <option value="$PROJECT_DIR$/package.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/service/src/main/assemly/package.xml" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/service/src/main/assembly/package.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
+        <option value="$PROJECT_DIR$/package.xml" />
+        <option value="$PROJECT_DIR$/core/src/main/assembly/package.xml" />
       </list>
     </option>
   </component>
@@ -749,24 +273,6 @@
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="postgresqlwriter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="postgresqlwriter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="postgresqlwriter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -782,7 +288,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548599308508" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548600911831" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataX" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -792,12 +298,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\demo\iservice" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service/src/main/assemly" />
       <recent name="C:\workspace\demo\service\src\main\plugin" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\demo\iservice" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -867,17 +374,17 @@
       <workItem from="1548338894537" duration="850000" />
       <workItem from="1548423953772" duration="5720000" />
       <workItem from="1548501607477" duration="4610000" />
-      <workItem from="1548595093420" duration="3274000" />
+      <workItem from="1548595093420" duration="5765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40333000" />
+    <option name="totallyTimeSpent" value="42824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27753934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27753934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -895,7 +402,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37707007" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38845146" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3299363" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32962137" />
@@ -956,51 +463,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="221" column="31" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/target/classes/plugin/reader/streamreader/plugin.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="2938" column="25" selection-start-line="2938" selection-start-column="25" selection-end-line="2938" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/alibaba/datax/core/job/JobContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/alibaba/datax/core/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2014">
-          <caret line="131" column="53" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/alibaba/datax/core/util/SecretUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5776">
-          <caret line="333" column="32" selection-start-line="333" selection-start-column="32" selection-end-line="333" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/target/classes/plugin/writer/mysqlwriter/plugin.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1131,13 +593,6 @@
         <state relative-caret-position="-1456" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresqlreader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/streamreader/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1173,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysqlwriter/src/main/assembly/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oraclereader/src/main/assembly/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1201,27 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgresqlwriter/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postgresqlwriter/src/main/assembly/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sqlserverreader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sqlserverwriter/src/main/assembly/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1233,13 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streamwriter/src/main/assembly/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1271,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ftpreader/src/main/assembly/package.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ftpwriter/src/main/assembly/package.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1306,17 +719,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgresqlwriter/src/main/assembly/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgresqlwriter/src/main/resources/plugin.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlserverreader/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="72" column="21" selection-start-line="55" selection-start-column="12" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysqlwriter/src/main/assembly/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamwriter/src/main/assembly/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgresqlwriter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgresqlreader/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="114" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/assembly/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ftpreader/src/main/assembly/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1779">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="240">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
+        <state relative-caret-position="215">
+          <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/assembly/package.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
         </state>
       </provider>
     </entry>
