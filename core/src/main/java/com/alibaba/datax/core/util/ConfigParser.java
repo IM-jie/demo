@@ -64,8 +64,8 @@ public final class ConfigParser {
         LOG.info("parsePlugin--------->" + parsePluginConfigByJson(pluginMap));
 
         try {
-//            configuration.merge(parsePluginConfig(new ArrayList<String>(pluginList)), false);
-            configuration.merge(parsePluginConfigByJson(pluginMap), false);
+            configuration.merge(parsePluginConfig(new ArrayList<String>(pluginList)), false);
+//            configuration.merge(parsePluginConfigByJson(pluginMap), false);
         }catch (Exception e){
             //吞掉异常，保持log干净。这里message足够。
             LOG.warn(String.format("插件[%s,%s]加载失败，1s后重试... Exception:%s ", readerPluginName, writerPluginName, e.getMessage()));
