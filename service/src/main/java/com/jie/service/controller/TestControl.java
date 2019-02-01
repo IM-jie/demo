@@ -1,6 +1,7 @@
 package com.jie.service.controller;
 
 import com.alibaba.datax.plugin.rdbms.util.DataBaseType;
+import com.jie.service.iservice.IDBConnectionService;
 import com.jie.service.iservice.ITableColumnService;
 import com.jie.service.iservice.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +20,15 @@ public class TestControl {
     @Autowired
     private ITableColumnService iTableColumnService;
 
+    @Autowired
+    private IDBConnectionService idbConnectionService;
+
     @GetMapping("/test")
     public String test(){
         return iTestService.test();
     }
 
-    @GetMapping("/getcolum")
+    @GetMapping("/getcolumn")
     public String getTableColumns(){
         String jdbcUrl = "jdbc:mysql://134.175.21.91:3306/datasource?useUnicode=true&characterEncoding=utf8";
         String userName = "root";
@@ -32,5 +36,14 @@ public class TestControl {
         DataBaseType DATABASE_TYPE = DataBaseType.MySql;
         List<String> columns = iTableColumnService.getTableColumns(DATABASE_TYPE, jdbcUrl, userName, password, "t_test");
         return String.join(",", columns);
+    }
+
+    @GetMapping("/testconnection")
+    public boolean getConnection(){
+        String jdbcUrl = "jdbc:mysql://134.175.21.91:3306/datasource?useUnicode=true&characterEncoding=utf8";
+        String userName = "root";
+        String password = "12346";
+        DataBaseType DATABASE_TYPE = DataBaseType.MySql;
+        return idbConnectionService.connectionUserful(DATABASE_TYPE, jdbcUrl, userName, password);
     }
 }

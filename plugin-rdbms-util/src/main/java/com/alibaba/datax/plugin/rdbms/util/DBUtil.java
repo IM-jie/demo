@@ -330,6 +330,23 @@ public final class DBUtil {
         }
     }
 
+    public static Connection testConnection(final DataBaseType dataBaseType,
+                                            final String jdbcUrl, final String username, final String password){
+        try {
+            return RetryUtil.executeWithRetry(new Callable<Connection>() {
+                @Override
+                public Connection call() throws Exception {
+                    return DBUtil.connect(dataBaseType, jdbcUrl, username,
+                            password, "1000L");
+                }
+            }, 1, 1000L, true);
+        } catch (Exception e) {
+            throw DataXException.asDataXException(
+                    DBUtilErrorCode.CONN_DB_ERROR,
+                    String.format("数据库连接失败. 因为根据您配置的连接信息:%s获取数据库连接失败. 请检查您的配置并作出修改.", jdbcUrl), e);
+        }
+    }
+
     /**
      * Get direct JDBC connection
      * <p/>
