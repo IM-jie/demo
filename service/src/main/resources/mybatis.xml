@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry location="C:\maven\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar"  />
+
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin">
+            <property name="useToStringFromRoot" value="true" />
+        </plugin>
+
+        <commentGenerator>
+            <!--关闭自动生成注释-->
+            <property name="suppressAllComments" value="true" />
+            <property name="suppressDefaultComments" value="true" />
+            <property name="dateFormat" value="yyyy-MM-dd HH:mm:ss"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://134.175.21.91:3306/datax?characterEncoding=utf8"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.jie.service.entity" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapper" targetProject="./src/main/resources">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jie.service.dao" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table tableName="t_roles" domainObjectName="RoleDo" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true" />
+            <!--<columnOverride column="status" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+        <table tableName="t_user" domainObjectName="UserDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="status" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+            <!--<columnOverride column="permission_id" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+        <table tableName="t_menu" domainObjectName="MenuDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="status" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+        <table tableName="t_info" domainObjectName="DBInfoDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+        </table>
+
+        <table tableName="t_trans" domainObjectName="TransDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="status" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+            <!--<columnOverride column="operate_type" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+        <table tableName="t_task" domainObjectName="TaskDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+        </table>
+
+        <table tableName="t_batch_task" domainObjectName="BatchTaskDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="is_read" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+
+        <table tableName="batch_detail" domainObjectName="BatchDetailDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="is_read" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+
+        <table tableName="job_history" domainObjectName="JobHistoryDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="is_read" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+
+        <table tableName="trans_history" domainObjectName="TransHistoryDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="is_read" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+
+        <table tableName="login_history" domainObjectName="LoginHistoryDO" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false"
+               selectByExampleQueryId="false">
+            <generatedKey column="id" sqlStatement="MYSQL" identity="true"/>
+            <!--<columnOverride column="is_read" javaType="java.lang.Integer" jdbcType="TINYINT"/>-->
+        </table>
+
+    </context>
+</generatorConfiguration>
